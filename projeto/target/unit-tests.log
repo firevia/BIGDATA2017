@@ -1,0 +1,18 @@
+22:56:49.012 Thread-2 ERROR Shell: Failed to locate the winutils binary in the hadoop binary path
+java.io.IOException: Could not locate executable C:\opt\spark\spark-2.2.0-bin-hadoop2.7\bin\winutils.exe in the Hadoop binaries.
+	at org.apache.hadoop.util.Shell.getQualifiedBinPath(Shell.java:379)
+	at org.apache.hadoop.util.Shell.getWinUtilsPath(Shell.java:394)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:387)
+	at org.apache.hadoop.hive.conf.HiveConf$ConfVars.findHadoopBinary(HiveConf.java:2327)
+	at org.apache.hadoop.hive.conf.HiveConf$ConfVars.<clinit>(HiveConf.java:365)
+	at org.apache.hadoop.hive.conf.HiveConf.<clinit>(HiveConf.java:105)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at py4j.reflection.CurrentThreadClassLoadingStrategy.classForName(CurrentThreadClassLoadingStrategy.java:40)
+	at py4j.reflection.ReflectionUtil.classForName(ReflectionUtil.java:51)
+	at py4j.reflection.TypeUtil.forName(TypeUtil.java:243)
+	at py4j.commands.ReflectionCommand.getUnknownMember(ReflectionCommand.java:175)
+	at py4j.commands.ReflectionCommand.execute(ReflectionCommand.java:87)
+	at py4j.GatewayConnection.run(GatewayConnection.java:214)
+	at java.lang.Thread.run(Unknown Source)
+22:56:49.669 Thread-2 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
